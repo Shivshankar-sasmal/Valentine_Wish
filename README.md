@@ -1,4 +1,4 @@
-Copyright (c) 2026 Shivshankar Sasmal
+Copyright (c) 2026
 
 Yes, this project has an owner. Hi 👋
 
