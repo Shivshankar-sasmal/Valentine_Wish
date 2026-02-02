@@ -1,0 +1,34 @@
+{
+  "name": "valentine-wish",
+  "version": "1.0.0",
+  "description": "A romantic Valentine web page",
+  "main": "index.js",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "browser-sync": "^2.27.10"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --port 7777",
+    "predeploy": "echo \"Preparing to deploy\"",
+    "deploy": "gh-pages -d .",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivshankar-sasmal/Valentine_Wish.git"
+  },
+  "keywords": [
+    "Valentine",
+    "Romance",
+    "Love",
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Shivshankar Sasmal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shivshankar-sasmal/Valentine_Wish/issues"
+  },
+  "homepage": "https://Shivshankar-sasmal.github.io/Valentine_Wish"
+}
