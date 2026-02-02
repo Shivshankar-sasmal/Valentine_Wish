@@ -4,15 +4,15 @@
   "description": "A romantic Valentine web page",
   "main": "index.js",
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "browser-sync": "^2.27.10"
+    "browser-sync": "^2.27.10",
+    "gh-pages": "^6.3.0"
   },
-  "scripts": {
-    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --port 7777",
-    "predeploy": "echo \"Preparing to deploy\"",
-    "deploy": "gh-pages -d .",
-    "test": "echo \"No test specified\" && exit 1"
-  },
+"scripts": {
+  "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --port 7777",
+  "build": "if exist dist rmdir /s /q dist && mkdir dist && copy index.html dist\\ && copy *.css dist\\ && copy *.js dist\\",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shivshankar-sasmal/Valentine_Wish.git"
